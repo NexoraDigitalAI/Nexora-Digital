@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import DemoChat from "./components/DemoChat";
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
       <Pricing />
       <FAQ />
       <Contact />
+      import DemoChat from "./components/DemoChat";
       <Footer />
     </div>
   );
