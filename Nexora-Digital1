@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Script to initialize a Vite project in the current directory.
+# Usage: ./Nexora-Digital1
+
+set -euo pipefail
+
+if ! command -v npm >/dev/null 2>&1; then
+	echo "npm is not installed. Please install Node.js and npm first." >&2
+	exit 1
+fi
+
+echo "Creating a Vite project in the current directory..."
+# Use the official initializer.
+npm create vite@latest .
+
+echo "Vite project initialized. Run 'npm install' then 'npm run dev' to start the dev server."
+npm create vite@latest .
