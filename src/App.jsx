@@ -12,6 +12,7 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import DemoChat from "./components/DemoChat";
+
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
@@ -28,7 +29,9 @@ function Home() {
       <Pricing />
       <FAQ />
       <Contact />
-      import DemoChat from "./components/DemoChat";
+
+      <DemoChat />
+
       <Footer />
     </div>
   );

@@ -3,24 +3,17 @@ export default function DemoChat() {
     <div
       style={{
         position: "fixed",
-        right: "20px",
-        bottom: "20px",
-        zIndex: 9999,
+        right: "30px",
+        bottom: "30px",
+        zIndex: 999999,
+        background: "red",
+        color: "white",
+        padding: "25px",
+        fontSize: "24px",
+        fontWeight: "bold",
       }}
     >
-      <button
-        style={{
-          background: "#2563eb",
-          color: "white",
-          border: "none",
-          borderRadius: "12px",
-          padding: "14px 18px",
-          fontWeight: "700",
-          cursor: "pointer",
-        }}
-      >
-        Try Our AI
-      </button>
+      TRY OUR AI
     </div>
   );
 }
