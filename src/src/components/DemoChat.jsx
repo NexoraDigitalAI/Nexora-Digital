@@ -7,45 +7,50 @@ export default function DemoChat() {
     <div
       style={{
         position: "fixed",
-        right: "20px",
-        bottom: "20px",
-        zIndex: 9999,
+        right: "24px",
+        bottom: "24px",
+        zIndex: 999999,
       }}
     >
       {isOpen && (
         <div
           style={{
             width: "360px",
-            height: "500px",
+            height: "480px",
+            marginBottom: "12px",
+            display: "flex",
+            flexDirection: "column",
             background: "#080d1a",
             border: "1px solid rgba(255,255,255,0.12)",
             borderRadius: "20px",
-            marginBottom: "12px",
-            boxShadow: "0 25px 70px rgba(0,0,0,0.5)",
             overflow: "hidden",
-            display: "flex",
-            flexDirection: "column",
+            boxShadow: "0 30px 80px rgba(0,0,0,0.6)",
           }}
         >
           <div
             style={{
               padding: "18px",
-              borderBottom: "1px solid rgba(255,255,255,0.08)",
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
+              borderBottom: "1px solid rgba(255,255,255,0.08)",
             }}
           >
             <div>
-              <strong style={{ color: "white" }}>
+              <div
+                style={{
+                  color: "white",
+                  fontWeight: "700",
+                }}
+              >
                 BluePeak Heating & Air
-              </strong>
+              </div>
 
               <div
                 style={{
+                  marginTop: "4px",
                   color: "#22c55e",
                   fontSize: "12px",
-                  marginTop: "4px",
                 }}
               >
                 ● AI Assistant Online
@@ -53,13 +58,14 @@ export default function DemoChat() {
             </div>
 
             <button
+              type="button"
               onClick={() => setIsOpen(false)}
               style={{
-                background: "transparent",
                 border: "none",
+                background: "transparent",
                 color: "white",
-                fontSize: "22px",
                 cursor: "pointer",
+                fontSize: "26px",
               }}
             >
               ×
@@ -70,20 +76,20 @@ export default function DemoChat() {
             style={{
               flex: 1,
               padding: "20px",
-              color: "white",
             }}
           >
             <div
               style={{
-                background: "#151d2e",
-                padding: "14px",
-                borderRadius: "14px",
                 maxWidth: "85%",
-                lineHeight: "1.5",
+                padding: "14px",
+                color: "white",
+                background: "#151d2e",
+                borderRadius: "14px",
                 fontSize: "14px",
+                lineHeight: "1.5",
               }}
             >
-              Hi! 👋 I'm BluePeak's AI assistant. How can I help
+              Hi! 👋 I&apos;m BluePeak&apos;s AI assistant. How can I help
               with your heating or cooling needs today?
             </div>
           </div>
@@ -91,9 +97,9 @@ export default function DemoChat() {
           <div
             style={{
               padding: "14px",
-              borderTop: "1px solid rgba(255,255,255,0.08)",
               display: "flex",
               gap: "8px",
+              borderTop: "1px solid rgba(255,255,255,0.08)",
             }}
           >
             <input
@@ -101,22 +107,24 @@ export default function DemoChat() {
               placeholder="Ask about AC repair..."
               style={{
                 flex: 1,
+                minWidth: 0,
+                padding: "12px",
+                color: "white",
                 background: "#111827",
                 border: "1px solid rgba(255,255,255,0.1)",
-                color: "white",
-                padding: "12px",
                 borderRadius: "10px",
                 outline: "none",
               }}
             />
 
             <button
+              type="button"
               style={{
-                background: "#2563eb",
-                border: "none",
-                color: "white",
                 width: "44px",
+                border: "none",
                 borderRadius: "10px",
+                color: "white",
+                background: "#2563eb",
                 cursor: "pointer",
                 fontSize: "18px",
               }}
@@ -128,16 +136,18 @@ export default function DemoChat() {
       )}
 
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        type="button"
+        onClick={() => setIsOpen((previous) => !previous)}
         style={{
-          background: "#2563eb",
-          color: "white",
+          padding: "15px 21px",
           border: "none",
           borderRadius: "14px",
-          padding: "14px 20px",
+          color: "white",
+          background: "#2563eb",
           fontWeight: "700",
+          fontSize: "14px",
           cursor: "pointer",
-          boxShadow: "0 10px 30px rgba(37,99,235,0.35)",
+          boxShadow: "0 12px 35px rgba(37,99,235,0.4)",
         }}
       >
         {isOpen ? "Close Chat" : "✦ Try Our AI"}
