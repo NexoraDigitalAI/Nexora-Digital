@@ -89,8 +89,8 @@ export default function DemoChat() {
                 lineHeight: "1.5",
               }}
             >
-              Hi! 👋 I&apos;m BluePeak&apos;s AI assistant. How can I help
-              with your heating or cooling needs today?
+              Hi! 👋 I&apos;m BluePeak&apos;s AI assistant. How can I help with
+              your heating or cooling needs today?
             </div>
           </div>
 
